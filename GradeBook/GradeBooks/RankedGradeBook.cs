@@ -2,7 +2,7 @@
 
 namespace GradeBook.GradeBooks
 {
-    public  class RankedGradeBook : BaseGradeBook
+    public class RankedGradeBook : BaseGradeBook
     {
         public RankedGradeBook(string name) : base(name)
         {
@@ -10,10 +10,9 @@ namespace GradeBook.GradeBooks
         }
         public override char GetLetterGrade(double averageGrade)
         {
-            if()
+            if (Students.Count < 5)
             {
                 throw InvalidOperationException;
-                return 'F';
             }
             return 'F';
         }
